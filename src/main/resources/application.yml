@@ -1,0 +1,9 @@
+spring:
+  devtools:
+    restart:
+      additional-exclude: logs/**
+graphql:
+  graphiql:
+    enabled: true
+  playground:
+    enabled: true
