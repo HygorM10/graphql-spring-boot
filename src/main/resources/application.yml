@@ -2,8 +2,23 @@ spring:
   devtools:
     restart:
       additional-exclude: logs/**
+  datasource:
+    url: jdbc:mysql://localhost:3306/Compras?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        ddl-auto: none
+    show-sql: true
 graphql:
   graphiql:
     enabled: true
   playground:
     enabled: true
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
